@@ -33,11 +33,10 @@ public class Main {
 
     private static Book buildBook(String title, String isbn, String author, int stars) {
         Book book = new Book();
-
         book.setTitle(title);
         book.setIsbn(isbn);
         book.setAuthor(author);
-        book.setStars(stars);
+        book.setStars((short) stars);
 
         return book;
     }
